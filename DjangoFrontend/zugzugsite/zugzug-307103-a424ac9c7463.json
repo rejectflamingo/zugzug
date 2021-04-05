@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "zugzug-307103",
+  "private_key_id": "a424ac9c7463595f56c1a4cc528214fa030187c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCj2hmyqFWGDk9f\n7IWQicyGSFyhibPx1S9ckLnfo9PQiKO9WFcdh70z7w3NJHXqfvPA+Ffe/CDYlaeC\nSqErnlLHeOI+dhyQVLClXVpBBIsTP05h0ctFLONePBXq6bUYSvFZ/OAdmKRKShOl\n5/kPs6GXooEgGKuBFKVwSdcz32QdFoicaa1RbvmDjL9+Ce1+LY0n26pfkDWy28Mx\nFg//vg2xCyKe1bOBiYGV5xh0+vvJ8fGkV7hJWxDpILY5gTg5/HcTbCESleXn7FAF\nf49BqEcfUQESkNVzcmRkwiADNJnt597NRn+g5Pd8QcbLcSOH26AmIk1yecYmZGcK\ndFg50mYXAgMBAAECggEAQcTPv9i1y4N+9N/5lNTbFaOCGw0s/4s04ZDuKwiVgwT1\nxJDrFt1fYrM39PoHosKmkPSeQNEvVgBsJm5SVzHLxGmPVscOHBkCdr4L9kEemfE1\nQyp0zyV/dlnj6lE48bFTQ22vf/G/MFqfnF6KqHTQDg+aiQmd/cgNyA67pQSsKMg4\nThF7NOgcp44si38c+Fw3u7BOpGUhNqRz4DnbFSUpROhCeGhvsDoWy0U1WGBlZvQv\n9FyS+waL59jZuvS1j59i3zGPac/XzEfGcmNEA1ZOxVaTHjsaPqK6vcGb6LMgKpCA\nm7v6IC6JsdhurE7wPsgIX5WEHEX/CrCbWOIwEcOlMQKBgQDNuijQrujY58vS5oby\nN7srA8HNAdZmzRTx+9Yq39IKp+nTWr6OfKd44wG8VrVuXi3blipmN+LYMvFd6XAz\nRLkJEiSBAk2Y3fgWkAiIqT2PBWAIBQ32p4MMBJ6E122GjZ4iRv81Nx4AvXv6lKYD\nidF82VAHvhz5lTS6Xoz9csmvbQKBgQDL5FGMhTgLjWusmZP85VBNZOTOALaUw1ly\nvw1MHUrBP86T1BcQ2USa+Kb0ZxYQdC2WaPzEJWyN0hGDDlC8qxlnXMWzxDoxoikj\nTt9EWKvwfWKnOLKv1ZlD7zW/x0Jn43a5WYbb5jz4fkAybYIm4pMC+bHoa1XbfR+A\nDBh4dZpFEwKBgErOBAVNdFFah5yaQjtU1HPhm9iFcIZUz+blYYyZcfB5+eXmOx/o\nZ6TnNjxbcwE8sYQE6EnezFc8vtMdDLU3qeiIdkmKotiQ7aKWoOPAVifpFnAUFm23\nn0kBbPp0stiYKgXgtu+MqRYv0CLfZjYnKMsy4YzPLg36mP+jXbTSxk9JAoGAG1vl\nvW9a1+IAIsbw3qx+nAP/18yss0WLSSRtylrb3xaKx7db6PzegdT/wifbBBYyz84C\nrOdAq78WbnmLR+XFoOMH/FlGXcaesogw2WD0oW6RwFKRV5rX2A/PLI62UG5rTe+/\nct5wK//06U9ceY9JnsqWntNYT/14Lpxw5CkTrFUCgYB9ElZQlUIoBuzGg+5b5sPu\nzjvtiAZzCJr0Ajv/D+Ov298MC4zaoVAhnqg4cMMJHJ2vUC6iOlkHA7DWOoREZ7dV\n9+0s/9sXYNfGJqB9FD5m601C2qcTkk80GCbdRxGWanVJ9jnEw/c2qQQg6r13+skf\nmTt7P8xzBiXuO60LX2ZU7Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "zugzug@zugzug-307103.iam.gserviceaccount.com",
+  "client_id": "102623132951263741216",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/zugzug%40zugzug-307103.iam.gserviceaccount.com"
+}

@@ -1,0 +1,44 @@
+2021-04-04 03:41:10,094 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2021-04-04 03:41:10,104 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'instances']
+2021-04-04 03:41:10,205 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'instances', 'describe']
+2021-04-04 03:41:10,207 DEBUG    root            Running [gcloud.sql.instances.describe] with arguments: [INSTANCE: "zugzig2"]
+2021-04-04 03:41:10,255 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2021-04-04 03:41:10,413 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/zugzug-307103/instances/zugzig2?alt=json HTTP/1.1" 404 None
+2021-04-04 03:41:10,414 DEBUG    root            (gcloud.sql.instances.describe) HTTPError 404: The Cloud SQL instance does not exist.
+Traceback (most recent call last):
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/surface/sql/instances/describe.py", line 90, in Run
+    instance = sql_client.instances.Get(
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/sqladmin/v1beta4/sqladmin_v1beta4_client.py", line 545, in Get
+    return self._RunMethod(
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 731, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 603, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://sqladmin.googleapis.com/sql/v1beta4/projects/zugzug-307103/instances/zugzig2?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sun, 04 Apr 2021 08:41:10 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "The Cloud SQL instance does not exist.",
+    "errors": [
+      {
+        "message": "The Cloud SQL instance does not exist.",
+        "domain": "global",
+        "reason": "instanceDoesNotExist"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 982, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/surface/sql/instances/describe.py", line 102, in Run
+    raise calliope_exceptions.HttpException(error)
+googlecloudsdk.calliope.exceptions.HttpException: HTTPError 404: The Cloud SQL instance does not exist.
+2021-04-04 03:41:10,418 ERROR    root            (gcloud.sql.instances.describe) HTTPError 404: The Cloud SQL instance does not exist.

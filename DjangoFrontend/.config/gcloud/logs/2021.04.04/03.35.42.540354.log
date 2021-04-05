@@ -1,0 +1,46 @@
+2021-04-04 03:35:42,544 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2021-04-04 03:35:42,826 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2021-04-04 03:35:42,829 DEBUG    root            Running [gcloud.auth.login] with arguments: []
+2021-04-04 03:35:42,846 DEBUG    requests_oauthlib.oauth2_session Generated new state VDznxg3GkpvijNbBLppvlaIHG30wvt.
+2021-04-04 03:35:42,847 INFO     ___FILE_ONLY___ Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=VDznxg3GkpvijNbBLppvlaIHG30wvt&prompt=consent&access_type=offline&code_challenge=HBSpNBl49-692puQb2KJAjS4u1DByIWWbpLBjVAwliw&code_challenge_method=S256
+
+
+2021-04-04 03:35:42,853 ERROR    root            There was a problem with web authentication.
+2021-04-04 03:35:42,853 DEBUG    root            (gcloud.auth.login) Please supply either code or authorization_response parameters.
+Traceback (most recent call last):
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 250, in HandleOauth2FlowErrors
+    yield
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 273, in _RunGoogleAuthFlowNoLaunchBrowser
+    return flow.run_console(
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 513, in run_console
+    self.fetch_token(code=code, include_client_id=True)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/third_party/google_auth_oauthlib/flow.py", line 280, in fetch_token
+    return self.oauth2session.fetch_token(
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/third_party/requests_oauthlib/oauth2_session.py", line 239, in fetch_token
+    raise ValueError('Please supply either code or '
+ValueError: Please supply either code or authorization_response parameters.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 982, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/surface/auth/login.py", line 189, in Run
+    creds = auth_util.DoInstalledAppBrowserFlowGoogleAuth(
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/util.py", line 83, in DoInstalledAppBrowserFlowGoogleAuth
+    user_creds = c_flow.RunGoogleAuthFlow(google_auth_flow, launch_browser)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 295, in RunGoogleAuthFlow
+    return _RunGoogleAuthFlowNoLaunchBrowser(flow)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 273, in _RunGoogleAuthFlowNoLaunchBrowser
+    return flow.run_console(
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py", line 256, in HandleOauth2FlowErrors
+    raise six.raise_from(AuthRequestFailedError(e), e)
+  File "<string>", line 3, in raise_from
+googlecloudsdk.core.credentials.flow.AuthRequestFailedError: Please supply either code or authorization_response parameters.
+2021-04-04 03:35:42,872 ERROR    root            (gcloud.auth.login) Please supply either code or authorization_response parameters.

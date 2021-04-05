@@ -1,0 +1,93 @@
+2021-04-04 04:18:20,422 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2021-04-04 04:18:20,424 DEBUG    root            Running [gcloud.init] with arguments: []
+2021-04-04 04:18:20,425 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2021-04-04 04:18:20,426 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2021-04-04 04:18:20,429 INFO     ___FILE_ONLY___ accessibility:
+  screen_reader: 'False'
+core:
+  account: julianruiz737@gmail.com
+  disable_usage_reporting: 'True'
+  project: zugzug-307103
+
+2021-04-04 04:18:20,431 INFO     ___FILE_ONLY___ 
+
+2021-04-04 04:18:32,535 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2021-04-04 04:18:32,535 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2021-04-04 04:18:32,536 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2021-04-04 04:18:32,536 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2021-04-04 04:18:32,539 INFO     ___FILE_ONLY___ Checking network connection...
+2021-04-04 04:18:33,413 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2021-04-04 04:18:33,521 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 338
+2021-04-04 04:18:33,599 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 200 None
+2021-04-04 04:18:33,744 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-04-04 04:18:33,832 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2021-04-04 04:18:33,834 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2021-04-04 04:18:33,921 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2021-04-04 04:18:33,923 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-04-04 04:18:34,037 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 154405
+2021-04-04 04:18:34,150 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2021-04-04 04:18:34,151 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2021-04-04 04:18:41,806 INFO     ___FILE_ONLY___ You are logged in as: [julianruiz737@gmail.com].
+
+
+2021-04-04 04:18:41,865 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-04-04 04:18:42,031 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2021-04-04 04:18:44,493 INFO     ___FILE_ONLY___ Your current project has been set to: [zugzug-307103].
+
+
+2021-04-04 04:18:44,693 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-04-04 04:18:44,738 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2021-04-04 04:18:44,787 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2021-04-04 04:18:44,789 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2021-04-04 04:18:44,793 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2021-04-04 04:18:45,248 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-04-04 04:18:45,558 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-04-04 04:18:45,562 INFO     root            Display disabled.
+2021-04-04 04:18:48,443 DEBUG    root            Executing command: ['/mnt/c/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk/bin/gsutil', 'config', '-n', '-o', '/home/jruiz737/.boto']
+2021-04-04 04:18:52,242 DEBUG    ___FILE_ONLY___ 
+2021-04-04 04:18:52,243 DEBUG    ___FILE_ONLY___ This command will create a boto config file at /home/jruiz737/.boto
+containing your credentials, based on your responses to the following
+questions.
+
+Boto config file "/home/jruiz737/.boto" created. If you need to use a
+proxy to access the Internet please see the instructions in that file.
+
+2021-04-04 04:18:52,243 INFO     ___FILE_ONLY___ Created a default .boto configuration file at [/home/jruiz737/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+
+2021-04-04 04:18:52,244 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2021-04-04 04:18:52,245 INFO     ___FILE_ONLY___ * Commands that require authentication will use julianruiz737@gmail.com by default
+
+2021-04-04 04:18:52,246 INFO     ___FILE_ONLY___ * Commands will reference project `zugzug-307103` by default
+
+2021-04-04 04:18:52,246 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2021-04-04 04:18:52,247 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2021-04-04 04:18:52,248 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2021-04-04 04:18:52,249 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2021-04-04 04:18:52,250 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2021-04-04 04:18:52,251 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2021-04-04 04:18:52,254 INFO     root            Display format: "default"

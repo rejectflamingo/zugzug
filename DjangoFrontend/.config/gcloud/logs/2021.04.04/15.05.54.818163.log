@@ -1,0 +1,35 @@
+2021-04-04 15:05:54,823 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-04-04 15:05:54,839 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-04-04 15:05:54,841 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "3600"]
+2021-04-04 15:05:54,903 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-04-04 15:05:54,907 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-04-04 15:05:55,071 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-04-04 15:05:55,080 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-04-04 15:05:55,082 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-04-04 15:05:55,197 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-04-04 15:05:55,212 INFO     root            Display format: "default json"
+2021-04-04 15:05:55,389 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "accessibility": {
+        "screen_reader": "False"
+      },
+      "core": {
+        "account": "julianruiz737@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "zugzug-307103"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfH6SMAwRcsSm0X1xmljSnU_cvLNKX9VCSH-aUBQ6FmEM-eyjPzn6hslyZsVWG6UmyxPnb0C6drNKNXi7sv07xC9GjFyvqO_1HT6M9_YMue0hr6KQLakqD9eL0Q3Aw_60GXUreBZdp7fcrDRSlgeIQtXELeZO9JVPA2RMw",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzZThkNDVhNDNjYjIyNDIxNTRjN2Y0ZGFmYWMyOTMzZmVhMjAzNzQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3Mjg0MDU4NTUyNjgxNDk4OTAxIiwiZW1haWwiOiJqdWxpYW5ydWl6NzM3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiU1NobG1CWlVjQ2lZcDFPVHA1ZGhlQSIsImlhdCI6MTYxNzU2Njc1NSwiZXhwIjoxNjE3NTcwMzU1fQ.RXL7U6_FVoZ-jP-SwSiBEc4UWxkKjbD5UGeGpYfbB6hNijv4seR4K3cuHwRD5SliJ1Z83TzoqMkhGmQMHIglgbZAWgViNHCfTV5X4fRaItN2kgv2V0YlyWjb2oKgsq2JGo0wv_aN7eeGIFIgP9EPH82k785zKjYqxn_qtUNb0I3ZwbO9Sph7yCkgUNpH7V_WJHS2L29S9GIN63g94Hcfr1LmxKtpU7cKVVoc-1kXRxoGkf45pS6BeVr99-jYUenoQ1RmSa4kHGZ6nEFcz50RGf_tKZcxyNl4wNsDc2IU-d-Q32dDZ0mVKEPzz08zlnYfXmuRWK06OZZSfT_LUQ9nhA",
+    "token_expiry": "2021-04-04T21:05:54Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jruiz737/.config/gcloud/config_sentinel"
+  }
+}
+2021-04-04 15:05:55,389 INFO     ___FILE_ONLY___ 
+

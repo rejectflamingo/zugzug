@@ -1,0 +1,32 @@
+2021-04-04 04:19:06,893 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-04-04 04:19:06,907 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-04-04 04:19:06,909 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "3600"]
+2021-04-04 04:19:06,924 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-04-04 04:19:06,927 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-04-04 04:19:07,049 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-04-04 04:19:07,057 INFO     root            Display format: "default json"
+2021-04-04 04:19:07,222 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "accessibility": {
+        "screen_reader": "False"
+      },
+      "core": {
+        "account": "julianruiz737@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "zugzug-307103"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfH6SMDk8SDk1w4meqk552uV2h-exC_cPyiPby87F0a1gp5Hmbrrg1ifh1mGS-ijCe3J3TTygtiZFBlpLxpSd3KPLFMyk8N7_2iFSXc12wt1J7qkqHQiF5EsFLEPJPo9TS8z3EdpJ3m-AghZUfenbgOHedQChwv_y-ei",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzZThkNDVhNDNjYjIyNDIxNTRjN2Y0ZGFmYWMyOTMzZmVhMjAzNzQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE3Mjg0MDU4NTUyNjgxNDk4OTAxIiwiZW1haWwiOiJqdWxpYW5ydWl6NzM3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiWlFqTGVUZ3AtOTJYbUZDUDYzc29tZyIsImlhdCI6MTYxNzUyNzk0NywiZXhwIjoxNjE3NTMxNTQ3fQ.FYL9H1KU4llIVTswmzICA60MFpwKLTOhkG_gQher6e2ptbu3NUeox9JcKTrYr2jEM0sHn30R9g9oBO3qERQDRs8aW86zr-hElz2qdNmQzZ6IyiYwhjWAOJLzVxfZOUS8XAKsvCHvjpi4OxpH-YcPyz6HHeeJoNe-CyrXV477lh3AbhbNsGO24IBjH-iHCS2IA6_A5gd3xuaK8B9yOJTF1gzhud7v79N9PmzM84bv6g0U1aNBgmD9uYZv24hmickS3ACbFZVwyukU0bWIqDru0oiaop8iubErVBevProMmjLhj_rDcB424-oCnKEUxoHfBEb0v1rjr-H3wc1kg5eG5g",
+    "token_expiry": "2021-04-04T10:19:06Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jruiz737/.config/gcloud/config_sentinel"
+  }
+}
+2021-04-04 04:19:07,222 INFO     ___FILE_ONLY___ 
+

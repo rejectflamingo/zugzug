@@ -1,0 +1,8 @@
+2021-04-04 03:27:50,858 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-04-04 03:27:51,105 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2021-04-04 03:27:51,107 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "zugzug-307103"]
+2021-04-04 03:27:51,109 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2021-04-04 03:27:51,191 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-04-04 03:27:51,328 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/zugzug-307103?alt=json HTTP/1.1" 200 None
+2021-04-04 03:27:51,330 INFO     root            Display format: "default"

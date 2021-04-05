@@ -1,0 +1,81 @@
+2021-04-04 04:59:50,051 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2021-04-04 04:59:50,053 DEBUG    root            Running [gcloud.init] with arguments: []
+2021-04-04 04:59:50,054 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2021-04-04 04:59:50,055 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2021-04-04 04:59:50,058 INFO     ___FILE_ONLY___ accessibility:
+  screen_reader: 'False'
+core:
+  account: julianruiz737@gmail.com
+  disable_usage_reporting: 'True'
+  project: zugzug-307103
+
+2021-04-04 04:59:50,062 INFO     ___FILE_ONLY___ 
+
+2021-04-04 04:59:52,829 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2021-04-04 04:59:52,829 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2021-04-04 04:59:52,830 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2021-04-04 04:59:52,830 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2021-04-04 04:59:52,834 INFO     ___FILE_ONLY___ Checking network connection...
+2021-04-04 04:59:53,574 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2021-04-04 04:59:53,678 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 338
+2021-04-04 04:59:53,795 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 200 None
+2021-04-04 04:59:53,842 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-04-04 04:59:53,939 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2021-04-04 04:59:53,941 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2021-04-04 04:59:54,041 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2021-04-04 04:59:54,043 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-04-04 04:59:54,176 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 154405
+2021-04-04 04:59:54,243 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2021-04-04 04:59:54,244 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2021-04-04 04:59:57,039 INFO     ___FILE_ONLY___ You are logged in as: [julianruiz737@gmail.com].
+
+
+2021-04-04 04:59:57,096 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-04-04 04:59:57,263 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2021-04-04 04:59:59,227 INFO     ___FILE_ONLY___ Your current project has been set to: [zugzug-307103].
+
+
+2021-04-04 04:59:59,393 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2021-04-04 04:59:59,427 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2021-04-04 04:59:59,472 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2021-04-04 04:59:59,473 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2021-04-04 04:59:59,478 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2021-04-04 04:59:59,824 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-04-04 05:00:00,166 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-04-04 05:00:00,170 INFO     root            Display disabled.
+2021-04-04 05:00:03,336 DEBUG    root            Not configuring default .boto file. File already exists at [/home/jruiz737/.boto].
+2021-04-04 05:00:03,336 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2021-04-04 05:00:03,337 INFO     ___FILE_ONLY___ * Commands that require authentication will use julianruiz737@gmail.com by default
+
+2021-04-04 05:00:03,337 INFO     ___FILE_ONLY___ * Commands will reference project `zugzug-307103` by default
+
+2021-04-04 05:00:03,337 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2021-04-04 05:00:03,338 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2021-04-04 05:00:03,340 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2021-04-04 05:00:03,341 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2021-04-04 05:00:03,342 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2021-04-04 05:00:03,343 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2021-04-04 05:00:03,345 INFO     root            Display format: "default"
